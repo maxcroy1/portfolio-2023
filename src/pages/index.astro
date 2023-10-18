@@ -1,5 +1,6 @@
 ---
-
+const backgroundColor = "black";
+const fontColor = "white";
 ---
 
 <html lang="en">
@@ -9,13 +10,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Maxwell Croy || Software Engineer</title>
-		<style>
+		<style define:vars={{backgroundColor, fontColor}}>
 			body {
-				background-color: black;
-				color: white;
+				background-color: var(--backgroundColor);
+				color: var(--fontColor);
 			}
 			a {
-				color: white;
+				color: var(--fontColor);
 			}
 		</style>
 	</head>
