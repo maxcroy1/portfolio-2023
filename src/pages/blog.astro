@@ -1,6 +1,15 @@
+---
+const posts = [
+  "/posts/post-1/"
+];
+---
+
 <body>
   <a href='/'>Home</a>
   <a href='/blog/'>Blog</a>
 
   <h1>Posts</h1>
+  <ul>
+    {posts.map((post, index) => <li><a href={post}>Post {index + 1}</a></li>)}
+  </ul>
 </body>
