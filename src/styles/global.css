@@ -2,21 +2,33 @@
 
 /* General Styling */
 
+header {
+  position: fixed;
+  width: 95vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .expanded {
   display: unset;
   display: none;
 }
 
 .hamburger {
-  padding-right: 20px;
   cursor: pointer;
+  margin-right: 20px;
+  margin-top: 40px;
 }
 
 .hamburger .line {
   display: block;
+  height: 2px;
+  margin-bottom: 8px;
+  border-radius: 2px;
   width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
 }
 
 .hero {
