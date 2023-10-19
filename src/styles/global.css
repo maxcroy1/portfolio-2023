@@ -1,19 +1,9 @@
-html.dark {
-  background-color: #0d0950;
-  color: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.dark .nav-links a {
-  color: #fff;
-}
+/* General Styling */
 
-body {
-  background-color: white;
-  color: black;
-}
-
-a {
-  color: black;
+.expanded {
+  display: unset;
 }
 
 .hamburger {
@@ -26,14 +16,16 @@ a {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: black;
+}
+
+.hero {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: black;
   display: none;
   margin: 0;
 }
@@ -53,15 +45,57 @@ a {
   margin-right: 10px;
 }
 
+/* Light Mode Styling */
+
+html {
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.hamburger .line {
+  background-color: black;
+}
+
+.nav-links {
+  background-color: black;
+}
+
 .nav-links a:hover,
 a:focus {
   background-color: white;
   color: black;
 }
 
-.expanded {
-  display: unset;
+/* Dark Mode Styling */
+
+html.dark {
+  background-color: black;
+  color: #fff;
 }
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+.dark .hamburger .line {
+  background-color: white;
+}
+
+.dark .nav-links {
+  background-color: white;
+}
+
+.dark .nav-links a:hover,
+a:focus {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive Styling */
 
 @media screen and (min-width: 636px) {
   .hamburger {
