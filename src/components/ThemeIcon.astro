@@ -21,9 +21,11 @@
   #themeToggle {
     border: 0;
     background: none;
+    margin-left: 14px;
+    margin-top: 38px; 
   }
   .sun {
-    fill: white;
+    fill: black;
   }
   .moon {
     fill: transparent;
@@ -33,7 +35,7 @@
     fill: transparent;
   }
   :global(.dark) .moon {
-    fill: black;
+    fill: white;
   }
 </style>
 
@@ -66,5 +68,5 @@ const handleToggleClick = () => {
 
 document
   .getElementById('themeToggle')
-    .addEventListener('click', handleToggleClick);
+  .addEventListener('click', handleToggleClick);
 </script>
