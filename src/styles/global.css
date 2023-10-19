@@ -4,6 +4,7 @@
 
 .expanded {
   display: unset;
+  display: none;
 }
 
 .hamburger {
@@ -20,13 +21,32 @@
 
 .hero {
   font-family: 'Bebas Neue', sans-serif;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: right;
+  width: 85%;
+}
+
+.hero h1, h2 {
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 4em;
+  line-height: 1;
+}
+
+.hero h2 {
+  font-size: 1.4em;
+  line-height: 1;
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  display: none;
   margin: 0;
 }
 
@@ -45,6 +65,11 @@
   margin-right: 10px;
 }
 
+.view-container {
+  height: 100vh;
+  width: 100vw;
+}
+
 /* Light Mode Styling */
 
 html {
@@ -57,10 +82,6 @@ a {
 }
 
 .hamburger .line {
-  background-color: black;
-}
-
-.nav-links {
   background-color: black;
 }
 
@@ -82,10 +103,6 @@ html.dark {
 }
 
 .dark .hamburger .line {
-  background-color: white;
-}
-
-.dark .nav-links {
   background-color: white;
 }
 
