@@ -1,0 +1,15 @@
+---
+const socialAccounts = [
+  {
+    platform: "LinkedIn",
+    url: "https://www.linkedin.com/in/maxwellhcroy/"
+  }, 
+  {
+    platform: "GitHub",
+    url: "https://github.com/maxcroy1"
+  }
+];
+---
+<footer class="footer-links">
+  {socialAccounts.map((account) => <a href={account.url}>{account.platform}</a>)}
+</footer>
