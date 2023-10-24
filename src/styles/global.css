@@ -16,6 +16,16 @@ nav {
   justify-content: space-between;
 }
 
+.about {
+  font-family: 'Bebas Neue', sans-serif;
+  margin: auto;
+  padding: 0px 30px 0px 20px;
+  position: absolute;
+  top: 250%;
+  transform: translate(0, -280%);
+  width: 100%;
+}
+
 .expanded {
   display: unset;
   display: none;
@@ -43,10 +53,11 @@ nav {
   top: 50%;
   transform: translate(0, -50%);
   text-align: right;
-  width: 85%;
+  width: 100%;
 }
 
-.hero h1, h2 {
+.hero h1,
+h2 {
   margin: 0;
 }
 
@@ -133,8 +144,19 @@ a:focus {
 /* Responsive Styling */
 
 @media screen and (min-width: 636px) {
+  .about {
+    padding: 0px 100px;
+    top: 200%;
+    transform: translate(0, -230%);
+    width: 80%;
+  }
+
   .hamburger {
     display: none;
+  }
+
+  .hero {
+    width: 90%;
   }
 
   .nav-links {
